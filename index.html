@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Головна — Планувальник{% endblock %}
+
+{% block content %}
+    <div class="welcome-box">
+        <h1>Веб-додаток на Flask з планувальником</h1>
+        <p><strong>Опис проєкту:</strong> Це зручна та сучасна система для планування ваших повсякденних справ та завдань.</p>
+        <p><strong>Важливо:</strong> Даний веб-додаток створено виключно у навчальних цілях для демонстрації роботи з базами даних у мові Python.</p>
+        <div class="action-box">
+            <a href="{{ url_for('planner') }}" class="go-btn">Перейти до планувальника</a>
+        </div>
+    </div>
+{% endblock %}
